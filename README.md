@@ -1,1 +1,2 @@
-# aho-corasick
+# aho-corasick algo
+
