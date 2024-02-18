@@ -22,3 +22,26 @@ The 'ReplacementDetails' struct orchestrates the replacement operation, leveragi
 
 Helper methods facilitate loading of input and reference data, execution of search operations, and output generation, 
 with support for parallel processing to enhance performance.
+
+```c#
+using Aho_Corasick_Helpers;
+...
+
+// Defines the structure for managing replacement operations, including file paths, processing times, and match counts.
+ReplacementDetails RD = new("xREF.txt", "STARGATE.dat", "STARGATE.xREF.dat") { Start = DateTime.Now };
+
+// Operations to load input, reference data, perform the replacement search, and generate the output.
+Helpers.LoadInput(ref RD);
+Helpers.LoadXREF(ref RD);
+Helpers.PerformSearch(ref RD);
+Helpers.WriteOutputParallel(RD);
+
+// Mark the end of processing and display the duration and match count.
+RD.End = DateTime.Now;
+
+
+Console.WriteLine($"Time: {RD.Duration.Seconds}secs \nReplacements: {RD.MatchCount}");
+
+// Time: 1secs
+// Replacements: 222194
+```
