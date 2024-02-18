@@ -1,7 +1,8 @@
 # Aho-Corasick algorithm
 
-![public domain](https://upload.wikimedia.org/wikipedia/commons/9/90/A_diagram_of_the_Aho-Corasick_string_search_algorithm.svg)
-
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/90/A_diagram_of_the_Aho-Corasick_string_search_algorithm.svg" width="500"  alt="public domain tree diagram">
+</p>
 
 ### Library
 This is a proof of concept implementation in c# of the [Aho-Corasick algorithm](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm) for efficient O(n + z) pattern matching in text processing. 
