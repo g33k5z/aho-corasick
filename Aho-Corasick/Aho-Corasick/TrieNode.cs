@@ -82,7 +82,14 @@
 
 
         /// <summary>
-        /// Performs DFS search in O(n + z)
+        /// The search process involves iterating through the characters of the text, transitioning through the trie based on the current character. 
+        /// When a character matches, the search proceeds to the child node corresponding to that character. 
+        /// If there is no matching child, the algorithm follows the failure link to another part of the trie and continues the search from there. 
+        /// This process repeats until all characters in the text have been processed.
+        ///
+        /// When the search reaches a node with an output link, it means that one or more keywords have been matched in the text. 
+        /// The algorithm then reports these matches. Thanks to the failure and output links, the Aho-Corasick algorithm can efficiently handle 
+        /// situations where keywords overlap or when one keyword is a suffix of another.
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
