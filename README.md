@@ -5,7 +5,7 @@
 </p>
 
 ### Library
-This is a proof of concept implementation in c# of the [Aho-Corasick algorithm](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm) for efficient O(n + m + z) pattern matching in text processing. 
+This is a proof of concept implementation in c# of the [Aho-Corasick algorithm](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm) for efficient O(n + m + z) pattern matching in text processing, where n is the length of the text, m is the total length of all patterns, and z is the number of matches found.
 
 
 
