@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 using Aho_Corasick_Helpers;
 
 /*
-    This is a proof of concept implementation of the Aho-Corasick algorithm for efficient O(n + z) pattern matching in text processing. 
+    This is a proof of concept implementation of the Aho-Corasick algorithm for efficient O(n + m + z) pattern matching in text processing, 
+    where n is the length of the text, m is the total length of all patterns, and z is the number of matches found
 
     The test example usage demonstrates a text replacement process of (12K x 12K) potential replacements operations. 
     It utilizes two key reference files (each containing over 12K lines): 
